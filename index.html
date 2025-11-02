@@ -1,25 +1,59 @@
 <!doctype html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>CS208 - Starter Code (UPDATE ME)!</title>
-  <meta name="description" content="">
+  <title>Starting Lineup</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <h1>HTML Rocks!!</h1>
-  <ul>
-  <li><a href="/hello">Click here to say hello</a></li>
-  <li><button id="hello-link">Click Me!</button></li>
-  <li><button id="joke-button">Dad Joke!</button></li>
-  <script src="script.js"></script>
-  </ul>
-  <img src="funny.png" alt="Funny Image" width="300" height="200">
+  <h1>Starting Lineup</h1>
 
+  <form id="lineupForm">
+    <p>
+      <fieldset>
+        <legend>Status:</legend>
+        <label><input type="radio" name="status" value="Draft">Draft</label>
+        <label><input type="radio" name="status" value="Final" checked>Final</label>
+      </fieldset>
+    </p>
+
+    <p>
+      <label for="gameDate">Date:</label>
+      <select name="gameDate" id="gameDate">
+        <option value="March 20">March 20</option>
+        <option value="March 24">March 24</option>
+        <option value="April 2">April 2</option>
+        <option value="April 6">April 6</option>
+        <option value="April 13">April 13</option>
+      </select>
+    </p>
+
+    <p>
+      <fieldset>
+        <legend>Players:</legend>
+        <label><input type="checkbox" name="player" value="Aarav Agarwal">Aarav Agarwal</label><br>
+        <label><input type="checkbox" name="player" value="Ava Johnson">Ava Johnson</label><br>
+        <label><input type="checkbox" name="player" value="Julio Ortiz">Julio Ortiz</label><br>
+        <label><input type="checkbox" name="player" value="Liam Rubio">Liam Rubio</label><br>
+        <label><input type="checkbox" name="player" value="Emma Witherspoon">Emma Witherspoon</label>
+      </fieldset>
+    </p>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <h2 id="output"></h2>
+
+  <ul>
+    <li><a href="/hello">Click here to say hello</a></li>
+    <li><button id="hello-link">Click Me!</button></li>
+    <li><button id="joke-button">Dad Joke!</button></li>
+  </ul>
+
+  <img src="funny.png" alt="Funny Image" width="300" height="200">
   <h2 id="joke-display"></h2>
 </body>
-
 </html>
